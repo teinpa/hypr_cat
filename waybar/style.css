@@ -1,0 +1,139 @@
+@import "mocha.css";
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "Cascursive";
+    font-size: 14px;
+    padding: 1px;
+    min-height: 0px;
+}
+
+window#waybar {
+    background-color: @base;
+    color: @base;
+    border-radius: 10px;
+}
+
+#workspaces button {
+    color: @crust;
+    border-radius: 10px;
+    /* background-color: transparent; */
+    transition-duration: 0.5s;
+}
+
+#workspaces button:hover {
+    /* box-shadow: inherit; */
+    /* text-shadow: inherit; */
+    /* background: @lavender; */
+    /* border: @lavender; */
+    color: @crust;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    background-color: @red;
+    color: @crust;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+    color: @crust;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+#clock,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#workspaces,
+#window
+
+/* If workspaces is the leftmost module, omit left margin */
+/* .modules-left > widget:first-child > #workspaces { */
+/*     margin-left: 0; */
+/* } */
+
+/* If workspaces is the rightmost module, omit right margin */
+/* .modules-right > widget:last-child > #workspaces { */
+/*     margin-right: 0; */
+/* } */
+
+#clock {
+    color: @base;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, @lavender, @red);
+}
+
+#custom-pacman {
+    color: @base;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, @lavender, @red);
+}
+
+#pulseaudio {
+    color: @base;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, @lavender, @red);
+}
+
+#pulseaudio.muted {
+    color: @base;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, @lavender, @red);
+}
+
+#wireplumber {
+    color: @base;
+    background-image: linear-gradient(to left, @lavender, @red);
+}
+
+#wireplumber.muted {
+    color: @base;
+    background-image: linear-gradient(to left, @lavender, @red);
+}
+
+#custom-media {
+    background-color: #66cc99;
+    color: #2a5c45;
+    min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+    background-color: #66cc99;
+}
+
+#custom-media.custom-vlc {
+    background-color: #ffa000;
+}
+
+#tray {
+    /* color: @base; */
+    color: @text;
+    background-color: @base;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#tray > .passive {
+    color: @text;
+    -gtk-icon-effect: dim;
+    background-color: @base;
+}
+
+#tray > .needs-attention {
+    color: @text;
+    -gtk-icon-effect: highlight;
+    background-color: @base;
+}
+
+#window {
+    color: @lavender;
+    background-color: @base;
+}
+

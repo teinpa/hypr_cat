@@ -1,0 +1,27 @@
+anchor = top
+width = 99%
+height = 30
+horizontal = true
+font-size = 10
+prompt-text = " run: "
+prompt-color = #f38ba8
+text-color = #cdd6f4
+selection-color = #f38ba8
+selection-match-color = #b4befe
+
+font = Cascursive
+outline-width = 0
+border-width = 2
+background-color = #1e1e2e
+min-input-width = 60
+result-spacing = 15
+padding-top = 2
+padding-bottom = 2
+padding-left = 2
+padding-right = 2
+
+border-color = #f38ba8
+corner-radius = 10
+
+clip-to-padding = true
+margin-top = 6

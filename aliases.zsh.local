@@ -1,0 +1,30 @@
+## aliases ##
+
+# pacman #
+alias lastins="awk '\$3 ~ /installed/' /var/log/pacman.log | tail --lines=50"
+alias lastuns="awk '\$3 ~ /removed/' /var/log/pacman.log | tail --lines=50"
+alias lastupg="awk '\$3 ~ /upgraded/' /var/log/pacman.log | tail --lines=50"
+alias clean="yay -Yc"
+
+# convinience #
+alias ls="exa --group-directories-first -la"
+alias v="nvim"
+# alias lf="lfrun"
+alias z="zathura"
+alias zshalias="v ~/.config/slimzsh/aliases.zsh.local"
+alias addtor="transmission-remote -a"
+alias wttr1="curl -s 'wttr.in/Seoul?format=%c+%t\n'"
+alias c="kitty +kitten icat"
+# alias vtop="vtop --theme catppuccin"
+alias duf="duf -only local"
+alias pfetch="clear; pfetch"
+# alias ctp="catcolors.sh"
+alias logins="awk '{print \$1,\$2,\$3}' ~/Documents/logins1.csv"
+
+# git aliases
+alias gitcon='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias gitadd='gitcon add'
+alias gitcomm='gitcon commit -m'
+alias gitpush='gitcon push'
+alias gitstat='gitcon status'
+

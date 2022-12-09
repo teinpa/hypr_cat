@@ -1,0 +1,66 @@
+{
+    "layer": "top",
+    "position": "top",
+    "width": 2530,
+    "height": 26,
+    "margin-top": 5,
+    "spacing": 5,
+    /* "gtk-layer-shell": false, */
+    
+    "modules-left": [
+        "wlr/workspaces"
+        ],
+    
+    "modules-center": [
+        "hyprland/window"
+        ],
+    
+    "modules-right": [
+        "tray",
+        "custom/pacman",
+        "pulseaudio",
+        "clock"
+        ],
+    
+    "clock": {
+        "format": " {:%I:%M%p} ",
+        "format-alt": " {:%a.%b.%d} "
+    },
+    
+    "hyprland/window": {
+        "format": " {} ",
+        "separate-outputs": false
+    },
+    
+    "tray": {
+        "icon-size": 14,
+    },
+    
+    "custom/pacman": {
+        "format": " PKG {} ",
+        "interval": 30,
+        "exec": "checkupdates | wc -l",
+    },
+    
+    "pulseaudio": {
+        "format": " VOL {volume} ",
+        "format-muted": " MUTE ",
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5",
+        "on-click-middle": "pavucontrol"
+    },
+    
+    "wlr/workspaces": {
+    "on-click": "activate",
+    "format": " {icon} ",
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "default": "1"
+      }
+    }
+}

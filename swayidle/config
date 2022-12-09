@@ -1,0 +1,5 @@
+timeout 600 'waylock' 
+timeout 3000 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
+before-sleep 'waylock'
+after-resume 'waylock'
+
